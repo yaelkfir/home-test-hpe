@@ -3,7 +3,6 @@ function changTo(e) {
   console.info(e.target);
 
   const header = document.querySelector('header');
-
   const logoContainer = header.querySelector('div');
   const logoTextH2 = logoContainer.querySelector('h2');
   const logotextSpan = logoContainer.querySelector('span');
@@ -52,10 +51,7 @@ function changTo(e) {
       logotextSpan.textContent = 'Functional';
 
     }, 400);
-
-
   }
-
 }
 
 function onArrival() {
