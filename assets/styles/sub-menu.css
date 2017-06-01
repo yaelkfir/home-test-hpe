@@ -1,0 +1,184 @@
+.sub-menu {
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+  background-color: #3b4c5c;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.9rem;
+  transform: translateY(0);
+
+  transition: all .5s ease-out;
+  z-index: 1;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left-side {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-right: 2.5vw;
+}
+
+.middle,
+.middle ul {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 100%;
+  padding: 20px 0;
+  margin-right: 12px;
+}
+
+.sub-menu .middle ul {
+  position: relative;
+}
+
+.sub-menu .middle ul::after {
+  content: '';
+  width: 1px;
+  height: 40%;
+  position: absolute;
+  right: 0;
+  top: 18px;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.sub-menu .middle ul::before {
+  content: '';
+  width: 1px;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  top: 18px;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.icon-no-hover,
+.sub-menu .middle .icon {
+  width: 6vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.exit-container {
+  height: 60px;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.sub-menu .exit-container:hover,
+.sub-menu .middle .icon:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  position: relative;
+}
+
+.sub-menu .exit-container:hover::after,
+.sub-menu .middle .icon:hover::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+}
+
+.pause {
+  background: url('../../assets/icons/Pause.svg') no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.stop {
+  background: url('../../assets/icons/Stop.svg') no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.bug {
+  background: url('../../assets/icons/Bug.svg') no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.magic-mouse {
+  background: url('../../assets/icons/Magic_Mause.svg') no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.camera {
+  background: url('../../assets/icons/Camera.svg') no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.comment {
+  background: url('../../assets/icons/Comment.svg') no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.zoom {
+  background: url('../../assets/icons/Zoom.svg') no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.code {
+  background: url('../../assets/icons/Code.svg') no-repeat;
+  background-position: center center;
+  background-size: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.left-side span {
+  margin-left: 1vw;
+  color: white;
+  font-family: 'MetricHPE-Web-Thin', sans-serif;
+}
+
+.exit {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: 'MetricHPE-Web-Regular', sans-serif;
+  border: none;
+  background-color: Transparent;
+  cursor: pointer
+}
