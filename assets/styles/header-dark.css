@@ -1,0 +1,48 @@
+
+header.dark .main-menu{
+  height: 40px;
+  background-color: #26333c;
+  font-size: 0.8rem;
+  color: #a1a1a1;
+
+  transition: all .5s ease-out;
+}
+
+header.dark .logo h2,
+header.dark .logo span{
+   color: white;
+}
+
+header.dark .logo h2{
+  margin-right: 0;
+}
+
+header.dark .top-bar-navigation::after{
+  opacity: 1;
+}
+
+header.dark .top-bar-navigation::before{
+  opacity: 1;
+}
+
+
+header .top-bar-navigation li{
+  height: 40px;
+  line-height: 40px;
+
+}
+
+header.dark .top-bar-navigation li.selected{
+  color: white;
+  position: relative;
+
+}
+header.dark .top-bar-navigation li.selected::after{
+  background-color: #ff454e;
+}
+
+header.dark .sub-menu{
+  display: flex;
+  transform: translateY(-60px);
+  transition: all .7s ease-out;
+}

@@ -1,0 +1,59 @@
+header.regular .main-menu {
+  width: 100%;
+  height: 60px;
+
+  font-size: 0.9rem;
+  color: #a1a1a1;
+  background-color: white;
+
+  transition: all .5s ease-out;
+
+}
+
+header.regular .logo h2,
+header.regular .logo span{
+  color: #26333d;
+}
+
+header.regular .logo h2{
+  margin-right: 6px;
+}
+
+header.regular .top-bar-navigation li{
+  height: 60px;
+  line-height: 60px;
+}
+
+header.regular .top-bar-navigation::after{
+  width: 13px;
+  height: 0.8rem;
+  border-left: 1px solid #ff454e;
+  position: absolute;
+  top: 13px;
+  right: -8px;
+  opacity: 0;
+
+ }
+header.regular .top-bar-navigation::before{
+  width: 13px;
+  height: 0.8rem;
+  position: absolute;
+  top: 13px;
+  right: -12px;
+  background: url('../icons/Record_Stop-10.svg') no-repeat;
+  opacity: 0;
+}
+header.regular .top-bar-navigation li.selected{
+  color: #26333d;
+  position: relative;
+
+}
+
+header.regular .top-bar-navigation li.selected::after{
+  background-color: #00b386;
+}
+
+header.regular .sub-menu{
+  height: 0;
+  opacity: 0;
+}
