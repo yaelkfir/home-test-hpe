@@ -48,12 +48,12 @@ function changTo(e) {
 
       header.classList.toggle('regular');
       header.classList.toggle('dark');
+      logoTextH2.textContent = 'StormRunner';
+      logotextSpan.textContent = 'Functional';
+
+    }, 400);
 
 
-    }, 250);
-
-    logoTextH2.textContent = 'StormRunner';
-    logotextSpan.textContent = 'Functional';
   }
 
 }
